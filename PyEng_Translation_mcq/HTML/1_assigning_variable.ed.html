@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="css/silex/normalize.css" rel="stylesheet">
+    <link data-silex-static="true" href="css/silex/front-end.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/current/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript" src="js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/nools.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/ctat/ctat_editor.min.js"></script>
+    <script type="text/javascript" src="js/silex/mut_observer.js"></script>
+    <script type="text/javascript" src="js/silex/pageable.js"></script>
+    <script type="text/javascript" src="js/silex/front-end.js"></script>
+
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {background-color: rgb(255, 255, 255);
+        }
+        .background-initial {background-color: rgb(255, 255, 255); top: 20px; left: 154px; width: 1080px; height: 650px; margin-top: 5px;
+        }
+        .silex-id-1659388570066-6 {top: 551px; left: 974px; height: 64px; width: 64px;
+        }
+        .silex-id-1661277072245-0 {top: 229px; left: 147px; height: 255px; width: 340px;
+        }
+        .silex-id-1665943950219-0 {top: 327px; left: 445px; height: 40px; width: 400px;
+        }
+        .silex-id-1659388419202-1 {top: 40px; left: 40px; height: 100px; width: 960px;
+        }
+    </style>
+
+
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/notjavascript" class="silex-script"></script>
+    <meta name="interface-id" content="1_assigning_variable">
+
+    <meta name="parent-data" content="{&quot;id&quot;:&quot;1YIF_g3xpntL8moqXoDzIw7HDmG6oIDC3&quot;, &quot;path&quot;:&quot;PyEng_Translation_mcq/HTML/1_assigning_variable.ed.html&quot;}">
+
+
+    <meta name="asset-map" content="{&quot;blob:https://cdn.ctat.cs.cmu.edu/f2051afe-cb56-4b4a-8067-40dcc09b4670&quot;:{&quot;name&quot;:&quot;assign_var_1.png&quot;,&quot;id&quot;:&quot;10o_BqcXsQybLoOlih0SDy6YyuDQ18xSM&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/assign_var_1.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/12377075-2ddd-40ad-bebf-5930cf5cadfc&quot;:{&quot;name&quot;:&quot;assign_var_1.png&quot;,&quot;id&quot;:&quot;10o_BqcXsQybLoOlih0SDy6YyuDQ18xSM&quot;,&quot;path&quot;:&quot;PyEng_Translation_ff/HTML/Assets/assign_var_1.png&quot;}}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/notjavascript" id="dropdown_behaviour.js" data-file-id="135ZPxOBMjPFaAq91BV7JmijAkEqlycrS" class="user-script">/*VERSION 1*/ //default version, does nothing /*window.onload = function(){ //get elements let answer_boxes = document.getElementsByClassName("answer"); let translation_boxes = document.getElementsByClassName("translation"); let check_buttons = document.getElementsByClassName("check_answer_button");
+        //should hide all answer boxes for (let box of answer_boxes){ box.classList.add("hidden"); } //should hide all check_answer buttons for (let button of check_buttons){ if (button.id == "check_1") continue; button.classList.add("hidden"); } //should
+        disable all translation boxes except the first one //also add an event listener to see when something is entered into the box for (let line of translation_boxes){ if (line.id != "engtrans_1") { line.firstElementChild.disabled = true; } line.addEventListener("click",
+        () => { //this event hides every answer when the student clicks into the current box let answerId = "answer_"; for (let i=1; i
+        <answer_boxes.length+1; i++) { let current=a nswerId+i; let answerBox=d ocument.getElementById(current); if (!answerBox.classList.contains( "hidden")) answerBox.classList.add( "hidden"); } }); // "onchange" works only if you hit enter or click anywhere
+        else after typing :0 //on the other hand, "onclick" makes it disappear immediately after clicking on the text box //Q: should we allow students to click on previous show answer buttons? } //add event listeners to all buttons for (let button of
+        check_buttons) { button.addEventListener( "click", ()=> { let id = button.id; let answerId = "answer_" + id[id.length-1]; let currentTranslId = "engtrans_" + id[id.length-1]; //check if student provided a translation let currentBox = document.getElementById(currentTranslId); if (currentBox.firstElementChild.value.length
+            > 5) { //check if answer box is hidden let answerBox = document.getElementById(answerId); if (answerBox.classList.contains("hidden")) { answerBox.classList.remove("hidden"); } else { //hide the answer box answerBox.classList.add("hidden");
+            } //enable the next line let nextBoxId = "engtrans_" + (parseInt(id[id.length-1])+1); let nextBox = document.getElementById(nextBoxId); if (nextBox != null) nextBox.firstElementChild.disabled = false; //enable next button let nextButtonId
+            = "check_" + (parseInt(id[id.length-1])+1); let nextButton = document.getElementById(nextButtonId); if (nextButton != null) nextButton.classList.remove("hidden"); } else { alert("Please try to think of an answer yourself first - enter some
+            more substantial text"); } }); } }*/ // VERSION 2 NONE //only shows next box when prev is correct /* window.onload = function(){ //get element let dropdown = document.getElementsByClassName("mc_box"); //should hide all answer boxes for (let
+            box of dropdown){ if (box.id == "mc_1") { continue; } box.classList.add("hidden"); let someOtherName = box.getElementsByTagName("select"); console.log(someOtherName[0]); someOtherName[0].addEventListener("change", () => { console.log("hi");
+            }); } } /* function thefunction(event) { console.log(event.target); let id = event.target.id; let answerId = "answer_" + id[(id.length)-1]; //show answer if answer is entered in translation box let answerBox = document.getElementById(answerId);
+            if (answerBox.classList.contains("hidden")) { answerBox.classList.remove("hidden"); } //else if answer shown and translation entered else { //hide answer answerBox.classList.add("hidden"); let nextLineId = "engtrans_" + (parseInt(id[(id.length)-1])+1);
+            let nextLine = document.getElementById(nextLineId); if (nextLine != null) { nextLine.firstElementChild.disabled = false; } } } */
+    </script>
+
+
+
+
+
+    <style id="current-page-style">
+        .page-page-1{display:inherit; }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+<!--onload = "ctatOnload();"-->
+
+<body data-silex-id="body-initial" class="body-initial prevent-draggable silex-runtime" data-silex-type="container" onload="ctatOnload();" style="">
+    <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
+        <div data-silex-type="image" class="editable-style silex-id-1661277072245-0 image-element page-page-1 paged-element" data-silex-id="silex-id-1661277072245-0"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/12377075-2ddd-40ad-bebf-5930cf5cadfc"></div>
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1659388419202-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1659388419202-1" id="instructions_main" data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true" contenteditable="false">
+            <br>Translate each line of Python code into English by selecting the translation from the drop down menu (access it by clicking on the box next to the code).
+            <br>
+        </div>
+
+
+
+
+        <div data-silex-type="ctat" id="done" class="CTATDoneButton editable-style silex-id-1659388570066-6 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1659388570066-6" data-ctat-component="CTATDoneButton" data-ctat-enabled="true"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div data-silex-type="ctat" class="CTATComboBox editable-style silex-id-1665943950219-0 page-page-1 paged-element CTATComponent mc_box" data-ctat-tabindex="1" data-silex-id="silex-id-1665943950219-0" id="mc_1" data-ctat-component="CTATComboBox" data-ctat-enabled="true"
+        data-ctat-labels="--- choose the most appropriate translation ---,0 is equal to variable total,Assign the number 0 to variable total ,Total is equal to 0"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

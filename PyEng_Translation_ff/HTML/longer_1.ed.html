@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="css/silex/normalize.css" rel="stylesheet">
+    <link data-silex-static="true" href="css/silex/front-end.css" rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/current/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript" src="js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/nools.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/current/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript" src="js/ctat/ctat_editor.min.js"></script>
+    <script type="text/javascript" src="js/silex/mut_observer.js"></script>
+    <script type="text/javascript" src="js/silex/pageable.js"></script>
+    <script type="text/javascript" src="js/silex/front-end.js"></script>
+
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {background-color: rgb(255, 255, 255);
+        }
+        .silex-id-1659388419202-1 {top: 57px; left: 58px; height: 100px; width: 960px;
+        }
+        .background-initial {background-color: rgb(255, 255, 255); top: 20px; left: 154px; width: 1264px; height: 920px; margin-top: 5px;
+        }
+        .silex-id-1661369369306-3 {top: 185px; left: 63px; height: 612px; width: 708px;
+        }
+        .silex-id-1659407519951-0 {top: 244px; left: 292px; height: 20px; width: 283px; border-radius: 2px; border-color: rgb(18, 239, 155); border-width: 2px; font-style: italic; border-style: solid;
+        }
+        .silex-id-1659407756128-1 {top: 333px; left: 324px; height: 20px; width: 305px; border-radius: 2px; border-color: rgb(18, 239, 155); border-width: 2px; font-style: italic; border-style: solid;
+        }
+        .silex-id-1659407915612-4 {top: 424px; left: 763px; height: 20px; width: 277px; border-color: rgb(18, 239, 155); border-width: 2px; font-style: italic; border-style: solid;
+        }
+        .silex-id-1659408080492-6 {top: 516px; left: 416px; height: 20px; width: 311px; border-width: 2px; font-style: italic; border-style: solid; border-color: rgb(18, 239, 155);
+        }
+        .silex-id-1659473186436-0 {top: 193px; left: 694px; height: 50px; width: 50px;
+        }
+        .silex-id-1659473204472-1 {top: 282px; left: 727px; height: 50px; width: 50px;
+        }
+        .silex-id-1659473216648-2 {top: 373px; left: 1165px; height: 50px; width: 50px;
+        }
+        .silex-id-1659473236658-3 {top: 464px; left: 818px; height: 50px; width: 50px;
+        }
+        .silex-id-1661369532001-7 {top: 605px; left: 529px; height: 20px; width: 336px; border-width: 2px; border-color: rgb(18, 239, 155); border-style: solid; font-style: italic;
+        }
+        .silex-id-1661369584581-8 {top: 697px; left: 528px; height: 20px; width: 374px; border-width: 2px; border-color: rgb(18, 239, 155); font-style: italic; border-style: solid;
+        }
+        .silex-id-1661369614302-9 {top: 789px; left: 433px; height: 20px; width: 315px; border-width: 2px; border-color: rgb(18, 239, 155); border-style: solid; font-style: italic;
+        }
+        .silex-id-1661369696370-11 {top: 645px; left: 932px; height: 50px; width: 50px;
+        }
+        .silex-id-1661369715417-12 {top: 735px; left: 837px; height: 50px; width: 50px;
+        }
+        .silex-id-1659388570066-6 {top: 833px; left: 1179px; height: 64px; width: 64px;
+        }
+        .silex-id-1661369665066-10 {top: 555px; left: 931px; height: 50px; width: 50px;
+        }
+        .silex-id-1659388439834-2 {top: 198px; left: 292px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1659388450439-3 {top: 288px; left: 326px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1659388468261-4 {top: 379px; left: 764px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1659388506052-5 {top: 471px; left: 417px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1661369462062-4 {top: 560px; left: 529px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1661369488934-5 {top: 651px; left: 530px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1661369506785-6 {top: 741px; left: 435px; height: 40px; width: 400px; background-color: rgb(217, 217, 217);
+        }
+        .silex-id-1659388439834-2 > input {
+        }
+        .silex-id-1659388450439-3 > input {
+        }
+        .silex-id-1659388468261-4 > input {
+        }
+        .silex-id-1659388506052-5 > input {
+        }
+        .silex-id-1661369462062-4 > input {
+        }
+        .silex-id-1661369488934-5 > input {
+        }
+        .silex-id-1661369506785-6 > input {
+        }
+    </style>
+
+
+
+    <style type="text/css" class="silex-style"></style>
+    <script type="text/notjavascript" class="silex-script"></script>
+    <meta name="interface-id" content="longer_1">
+
+    <meta name="parent-data" content="{&quot;id&quot;:&quot;1Mt1I4AL5vVqGhi7A8YSBpVe_7jyj0Y-h&quot;, &quot;path&quot;:&quot;PyEng_Translation_ff/HTML/longer_1.ed.html&quot;}">
+
+
+    <meta name="asset-map" content="{&quot;blob:https://cdn.ctat.cs.cmu.edu/e7db4f2c-3d62-42e7-8b22-1b05ee81a0b4&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/9911f2be-2a39-4848-a2b6-ddc8ce057b00&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/424bb15a-1dc1-4470-b8da-064bf50279ac&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/45d85f4f-0bce-4199-b1ee-748ce4d91268&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/4bfb07ce-6252-4ae8-8739-6182d1cb0b93&quot;:{&quot;name&quot;:&quot;longer_1.png&quot;,&quot;id&quot;:&quot;11FvC7idfEUUrEXyMM8Q3qlbx_sPpRluD&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/longer_1.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/11456a55-4ec0-49d8-aad7-df860252f5c9&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/a0f0cfc3-2e5c-4e2b-b04c-f5a5cee48540&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;},&quot;blob:https://cdn.ctat.cs.cmu.edu/451cf298-0846-4198-87e8-7ec6b32a03f3&quot;:{&quot;name&quot;:&quot;checktemp2.png&quot;,&quot;id&quot;:&quot;10fKAHoR9yCc4VFmBwQoHv_0sbh9yLIVs&quot;,&quot;path&quot;:&quot;PyEng_Translation/HTML/Assets/checktemp2.png&quot;}}">
+
+
+
+
+
+
+    <script type="text/notjavascript" id="pyengtrans_behavior.js" data-file-id="10fl1WGmyENxQH-PAAYHKaj4lCl9B08LB" class="user-script">window.onload = function(){ //should hide all answer boxes let answer_boxes = document.getElementsByClassName("answer"); for (let box of answer_boxes){ box.classList.add("hidden"); } //should disable all translation boxes except the first one let
+        translation_boxes = document.getElementsByClassName("translation"); for (let i=1; i
+        <translation_boxes.length; i++){ translation_boxes[i].disabled=t rue; } //add event listeners to all buttons let check_buttons=d ocument.getElementsByClassName( "check_answer_button"); for (let button of check_buttons) { button.addEventListener(
+        "click", changeAnswerState); } } //current issue: student can click show answer for lines they have not done yet function changeAnswerState(event){ let buttonId=e vent.target.id[-1]; //should be last letter of id of clicked button (which is a number)
+        let answerId="answer_" + buttonId; let answerBox=d ocument.getElementById(answerId); if (answerBox.classList.contains( "hidden")) { answerBox.classList.remove( "hidden"); } else { answerBox.classList.add( "hidden"); let nextLineId="engtrans_"
+        + buttonId; let nextLine=d ocument.getElementById(nextLineId); nextLine.disabled=f alse; } } </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <style id="current-page-style">
+                .page-page-1{display:inherit; }
+            </style>
+            <!-- Silex HEAD tag do not remove -->
+            <!-- End of Silex HEAD tag do not remove -->
+</head>
+<!--onload = "ctatOnload();"-->
+
+<body data-silex-id="body-initial" class="body-initial prevent-draggable silex-runtime" data-silex-type="container" onload="ctatOnload();" style="">
+    <a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+    <div data-silex-id="background-initial" class="background background-initial editable-style container-element prevent-draggable" data-silex-type="container">
+        <div data-silex-type="image" class="editable-style silex-id-1661369369306-3 image-element page-page-1 paged-element" data-silex-id="silex-id-1661369369306-3"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/4bfb07ce-6252-4ae8-8739-6182d1cb0b93"></div>
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1659388419202-1 text-element page-page-1 paged-element CTATComponent" data-silex-id="silex-id-1659388419202-1" id="instructions_main" data-ctat-component="CTATTextBasedComponent"
+        data-ctat-enabled="true" contenteditable="false">
+            <br>(1) Translate each line of Python code into English by entering your answer into the box next to the code, (2) check your answer by clicking on the yellow check button (found on the right side of the box where you put your answer).</div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1659388439834-2 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1659388439834-2" id="engtrans_1" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1659388450439-3 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1659388450439-3" id="engtrans_2" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1659388468261-4 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1659388468261-4" id="engtrans_3" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1659388506052-5 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1659388506052-5" id="engtrans_4" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" id="done" class="CTATDoneButton editable-style silex-id-1659388570066-6 page-page-1 paged-element CTATComponent" data-ctat-tabindex="1" data-silex-id="silex-id-1659388570066-6" data-ctat-component="CTATDoneButton" data-ctat-enabled="true"></div>
+
+
+
+
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1659407519951-0 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1659407519951-0" id="answer_1" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Assign the number 10 to variable score</div>
+        <div data-silex-type="text" class="CTATTextField editable-style text-element CTATComponent silex-id-1659407756128-1 page-page-1 paged-element answer" data-silex-id="silex-id-1659407756128-1" id="answer_2" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Assign the number 0 to variable deduction</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1659407915612-4 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1659407915612-4" id="answer_3" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Assign user input to variable response</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1659408080492-6 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1659408080492-6" id="answer_4" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Check if response is equal to "no" and if so</div>
+
+
+
+
+        <div data-silex-type="image" class="editable-style silex-id-1659473186436-0 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1659473186436-0" id="check_1"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/e7db4f2c-3d62-42e7-8b22-1b05ee81a0b4"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1659473204472-1 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1659473204472-1" id="check_2"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/9911f2be-2a39-4848-a2b6-ddc8ce057b00"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1659473216648-2 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1659473216648-2" id="check_3"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/424bb15a-1dc1-4470-b8da-064bf50279ac"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1659473236658-3 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1659473236658-3" id="check_4"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/45d85f4f-0bce-4199-b1ee-748ce4d91268"></div>
+
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1661369462062-4 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1661369462062-4" id="engtrans_5" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1661369488934-5 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1661369488934-5" id="engtrans_6" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="ctat" class="CTATTextInput editable-style silex-id-1661369506785-6 page-page-1 paged-element CTATComponent translation" data-ctat-tabindex="1" data-silex-id="silex-id-1661369506785-6" id="engtrans_7" data-ctat-component="CTATTextInput"
+        data-ctat-enabled="true"></div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1661369532001-7 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1661369532001-7" id="answer_5" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Print to the screen the string "penalty in place"</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1661369584581-8 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1661369584581-8" id="answer_6" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Reduce the value of score by the value of deduction</div>
+        <div data-silex-type="text" class="CTATTextField editable-style silex-id-1661369614302-9 text-element page-page-1 paged-element CTATComponent answer" data-silex-id="silex-id-1661369614302-9" id="answer_7" data-ctat-component="CTATTextBasedComponent" data-ctat-enabled="true"
+        contenteditable="false">Print "final" and the value of score to screen</div>
+        <div data-silex-type="image" class="editable-style silex-id-1661369665066-10 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1661369665066-10" id="check_5"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/11456a55-4ec0-49d8-aad7-df860252f5c9"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1661369696370-11 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1661369696370-11" id="check_6"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/a0f0cfc3-2e5c-4e2b-b04c-f5a5cee48540"></div>
+        <div data-silex-type="image" class="editable-style silex-id-1661369715417-12 image-element page-page-1 paged-element check_answer_button" data-silex-id="silex-id-1661369715417-12" id="check_7"><img class="silex-element-content" src="blob:https://cdn.ctat.cs.cmu.edu/451cf298-0846-4198-87e8-7ec6b32a03f3"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
